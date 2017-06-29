@@ -1,0 +1,23 @@
+
+<template>
+  <link rel="import" href="../dark-side.html">
+
+    <h1>Composing Custom Element with Template Parts</h1>
+
+    <require from="./widget"></require>
+    <require from="./child-element"></require>
+
+    <h2>The child-element inside a widget</h2>
+    <widget title="A Widget" icon="fa-cog">
+      <template replace-part="item-template">
+        <child-element text.bind="$parent.someText"></child-element>
+      </template>
+    </widget>
+
+    <h2>The child-element on its own</h2>
+    <child-element text.bind="someText"></child-element>
+
+    <h2>A textbox bound to data that's also bound to both the child-elements</h2>
+    <input type="text" value.bind="someText">
+
+  </template>

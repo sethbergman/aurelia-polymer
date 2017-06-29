@@ -1,0 +1,12 @@
+<template>
+  <require from="./widget.css"></require>
+	<div class="widget">
+		<div class="widget-header">
+			<i class="fa ${icon}"></i>
+			<h3>${title}</h3>
+		</div>
+		<div class="widget-content">
+			<template replaceable part="item-template"></template>
+		</div>
+	</div>
+</template>
