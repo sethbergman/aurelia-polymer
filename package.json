@@ -1,12 +1,13 @@
 {
-	"name": "basic-aurelia",
+	"name": "aurelia-polymer",
 	"description": "An Aurelia client application.",
 	"version": "0.1.0",
-	"repository": {
-		"type": "???",
-		"url": "???"
-	},
+	"author": "Seth Bergman",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sethbergman/aurelia-polymer.git"
+	},
 	"devDependencies": {
 		"@types/jest": "^19.2.2",
 		"@types/whatwg-fetch": "^0.0.33",
