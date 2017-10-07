@@ -18,7 +18,7 @@ COPY . /usr/src/app
 EXPOSE 9000
 
 # defined in package.json
-CMD [ "npm", "run", "prod:build" ]
+CMD [ "au", "run", "--env-prod" ]
 
 
 EXPOSE 9000
